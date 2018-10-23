@@ -1,19 +1,11 @@
-import React, { Component } from 'react';
-import MovieCard from './card-components/MovieCard.js'
-import movieData from './data.js'
+import React from 'react';
 
-export default class MovieShowcase extends Component {
-
-  generateMovieCards = () => {
-    // map over your movieData array and return the correct
-    <MovieCard />
-  }
-
-  render() {
-    return (
-      <div id="movie-showcase">
-        {this.generateMovieCards()}
+export default class MovieShowcase extends Component{
+  render(){
+    return(
+      <div>
+        <MovieCard />
       </div>
-    )
+    );
   }
 }
